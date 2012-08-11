@@ -1,0 +1,55 @@
+body{margin: 10px;padding: 0;font-family: Arial, Calibri, Verdana, Tahoma, Times New Roman ;text-align: center;vertical-align: middle;background-color: #eaeaea;} 
+input, button{height: 40px;vertical-align:middle;padding: 0px;-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;}
+input
+{
+	margin:10px 0 15px 0;
+	line-height:41px;
+	width: 95%; 
+	font-size: 24px;
+	text-align: left;
+	text-indent:10px;
+	border: 2px solid #171717;
+	color: #ffffff;
+	background-color:#232323;
+	background: -moz-linear-gradient(top,#fa0303 0%,#c20202 25%,#660505 75%,#94020e);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fa0303),color-stop(0.25, #c20202),color-stop(0.75, #660505),to(#94020e));
+}
+button {
+	line-height:40px;
+	font-size: 24px;
+	cursor: pointer;
+	margin: 0 2px 10px 2px;
+	width:21%;
+	background: -moz-linear-gradient(top,#f0f0f0 0%,#b8b8b8 25%,#6b6b6b 75%,#424242);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0),color-stop(0.25, #b8b8b8),color-stop(0.75, #6b6b6b),to(#424242));
+	border: 2px solid #171717;
+	-moz-box-shadow:0px 1px 2px rgba(000,000,000,0.5),inset 0px 0px 10px rgba(087,087,087,0.7);
+	-webkit-box-shadow:0px 1px 2px rgba(000,000,000,0.5),inset 0px 0px 10px rgba(087,087,087,0.7);
+	box-shadow:0px 1px 2px rgba(000,000,000,0.5),inset 0px 0px 10px rgba(087,087,087,0.7);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.4),0px 1px 0px rgba(255,255,255,0.3);
+}
+button:active{border: solid 2px #707070;}
+button:hover
+{
+	color:#FFFFFF;
+	background: -moz-linear-gradient(top,#fa0303 0%,#c20202 25%,#660505 75%,#94020e);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fa0303),color-stop(0.25, #c20202),color-stop(0.75, #660505),to(#94020e));
+}
+.calculator
+{
+	width:216px;
+	margin:auto;
+	padding:10px;
+	background: -moz-linear-gradient(top, #ffffff 0%, #b5b5b5);
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#b5b5b5));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #949494;
+	-moz-box-shadow:0px 1px 6px rgba(000,000,000,1),inset 0px 0px 0px rgba(255,255,255,0);
+	-webkit-box-shadow:0px 1px 6px rgba(000,000,000,1),inset 0px 0px 0px rgba(255,255,255,0);
+	box-shadow:0px 1px 6px rgba(000,000,000,1),inset 0px 0px 0px rgba(255,255,255,0);
+	text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+}
+.clear {clear:both;}
+button#keyPad_btnEnter {width: 71%}
