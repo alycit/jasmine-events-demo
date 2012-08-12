@@ -6,8 +6,8 @@ input
 	line-height:41px;
 	width: 95%; 
 	font-size: 24px;
-	text-align: left;
-	text-indent:10px;
+	text-align: right;
+    padding:0 10px;
 	border: 2px solid #171717;
 	color: #ffffff;
 	background-color:#232323;
