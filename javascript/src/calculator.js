@@ -1,14 +1,14 @@
-var CalculatorView= function() {
+var CalculatorView = function() {
 	var calculatorView = {};
-    calculatorView.init = function(){
-
-    };
 
     calculatorView.getClearButton = function(){
         return $('#keyPad_btnClr');
     };
     calculatorView.getScreenValue = function(){
-        return $('#keyPad_UserInput').val();
+        return $('#screen').val();
+    };
+	calculatorView.setScreenValue = function(value){
+        return $('#screen').val(value);
     };
 
 	return calculatorView;
@@ -16,17 +16,28 @@ var CalculatorView= function() {
 
 var CalculatorController= function() {
     var calculatorController = {};
-    //var calculatorView = CalculatorView;
+    var calculatorView = CalculatorView;
 
-
-    calculatorController.getView = function(){
+	calculatorController.initialize = function() {
+		calculatorView.getClearButton().on("click", this.clearScreen);
+	};
+	
+	calculatorController.clearScreen = function(){
+		calculatorView.setScreenValue(0);
+	};
+	
+    calculatorController.getView = function() {
         return calculatorView;
     };
+
     return calculatorController;
 }();
 
 
-
+$(document).ready(function() {
+	var calculator = CalculatorController;
+	calculator.initialize();
+});
 
 
 
