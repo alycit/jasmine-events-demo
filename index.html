@@ -8,6 +8,7 @@
             $(function () {
 
                 var calculatorModel = new CalculatorModel();
+                calculatorModel.setInputValue("0");
                 var calculatorController = new CalculatorController(calculatorModel);
                 var calculatorView = new CalculatorView(calculatorModel,calculatorController);
                 calculatorView.initialize();
