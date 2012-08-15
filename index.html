@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<div class="calculator">
-        	    <input type="text" id="screen"  maxlength="10" readonly value=8>
+        	    <input type="text" id="screen"  maxlength="10" readonly value=0>
 		        <!--1st ROW-LEFT-->
 		        <button id="keyPad_btn7">7</button>
         	    <button id="keyPad_btn8">8</button>
@@ -37,5 +37,12 @@
 				<button id="keyPad_btnEnter" class="keyPad_btnCommand">=</button>
 			    <div class="clear"></div>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var calculatorView = CalculatorView;
+                var calculator = CalculatorController;
+                calculator.initialize(calculatorView);
+            });
+        </script>
 	</body>
 </html>
