@@ -6,8 +6,10 @@ var calculator_spec_helper = function () {
         initializeCalcView:function () {
             calculatorView = CalculatorView;
             spyOn(calculatorView, 'setScreenValue').andCallThrough();
-            spyOn(calculatorView, 'getOneButtonValue').andReturn(1);
-            spyOn(calculatorView, 'getTwoButtonValue').andReturn(2);
+            spyOn(calculatorView, 'getOneButtonValue').andReturn('1');
+            spyOn(calculatorView, 'getTwoButtonValue').andReturn('2');
+            spyOn(calculatorView, 'getDotButtonValue').andReturn('.');
+            spyOn(calculatorView, 'appendNumber').andCallThrough();
             return calculatorView;
         },
         initializeCalculator:function () {
